@@ -12,6 +12,7 @@ body {
   grid-template-columns: 1fr;
   align-items: center;
   background-color: cadetblue;
+  text-align: center; 
 }
 
 .title {
@@ -29,6 +30,12 @@ h4 {
   font-weight: 300;
 }
 
+picture img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 img {
   display: block;
 }
@@ -36,5 +43,16 @@ img {
 @media (min-width: 960px) {
   .header {
     grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    text-align: left;
+  }
+
+  .title {
+    padding: 80px;
+  }
+
+  picture img {
+    height: 100vh;
+    object-fit: cover;
   }
 }
